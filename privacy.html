@@ -3,13 +3,13 @@
 <title>MyReader — конфиденциальность</title><link rel="stylesheet" href="style.css"></head>
 <body><main>
 <h1>Политика конфиденциальности</h1>
-<p class="muted">MyReader · обновлено 11 ноября 2026</p>
+<p class="muted">MyReader · обновлено 15 ноября 2026</p>
 
 <h2>Коротко</h2>
-<p>Ваши книги, позиции чтения, закладки и заметки разработчику MyReader не передаются: они хранятся на вашем устройстве и, если вы включите синхронизацию, в вашем собственном облаке — Google Диске или Яндекс Диске. В приложении нет рекламы и аналитики. Сервер разработчика получает только то, что нужно для покупки MyReader Pro, и не хранит ни имени, ни почты, ни данных карты.</p>
+<p>Ваши книги, позиции чтения, закладки и заметки разработчику MyReader не передаются: они хранятся на вашем устройстве и, если вы включите синхронизацию, в вашем собственном облаке — Google Диске, Яндекс Диске или на вашем сервере WebDAV. В приложении нет рекламы и аналитики. Сервер разработчика получает только то, что нужно для покупки MyReader Pro, и не хранит ни имени, ни почты, ни данных карты.</p>
 
 <h2>Что хранится на устройстве</h2>
-<p>Книги, обложки, позиция чтения, закладки, заметки, список каталогов OPDS (с логином и паролем, если каталог закрытый) и настройки хранятся в памяти приложения на вашем устройстве. Они удаляются вместе с приложением или его данными.</p>
+<p>Книги, обложки, позиция чтения, закладки, заметки, полки, статистика чтения, список каталогов OPDS (с логином и паролем, если каталог закрытый) и настройки хранятся в памяти приложения на вашем устройстве. Они удаляются вместе с приложением или его данными.</p>
 
 <h2>Синхронизация через Google Диск</h2>
 <p>Если вы войдёте через Google, приложение получит доступ только к своей скрытой папке на вашем Google Диске (разрешение <code>drive.appdata</code>). Других ваших файлов оно не видит. В эту папку записываются данные, перечисленные выше, чтобы они появились на других ваших устройствах. Данные передаются напрямую между устройством и Google и разработчику не отправляются. Адрес почты аккаунта Google нужен только для показа в настройках приложения.</p>
@@ -19,6 +19,16 @@
 <h2>Синхронизация через Яндекс Диск</h2>
 <p>Если вы войдёте через Яндекс ID, приложение получит доступ только к своей папке на вашем Яндекс Диске — «Приложения/MyReader» (разрешение «Доступ к папке приложения на Диске»), а также к общим сведениям о Диске, чтобы показать в настройках имя аккаунта. Других ваших файлов оно не видит. Данные передаются напрямую между устройством и Яндексом и разработчику не отправляются. Ключ доступа хранится только на вашем устройстве.</p>
 <p>Отключить синхронизацию — в настройках приложения («Выйти из аккаунта»). Удалить данные — удалите папку «Приложения/MyReader» на Яндекс Диске. Отозвать доступ — в настройках безопасности Яндекс ID (<a href="https://id.yandex.ru/security">id.yandex.ru/security</a>), раздел с приложениями, у которых есть доступ к аккаунту.</p>
+
+<h2>Синхронизация через WebDAV</h2>
+<p>Если вы подключите свой сервер WebDAV (Nextcloud, NAS и т. п.), приложение записывает данные, перечисленные выше, в папку «MyReader» на этом сервере. Адрес, логин и пароль сервера хранятся только на вашем устройстве. Данные передаются напрямую между устройством и вашим сервером и разработчику не отправляются. Отключить — в настройках приложения, удалить данные — удалите папку «MyReader» на сервере.</p>
+<p>Пароли закрытых каталогов OPDS в облако (Google Диск, Яндекс Диск, WebDAV) записываются только в зашифрованном виде.</p>
+
+<h2>Резервная копия</h2>
+<p>Резервная копия — файл, который вы сами сохраняете, куда выберете (память телефона, ваш диск). Разработчику он не отправляется. Пароли каталогов в нём зашифрованы.</p>
+
+<h2>Словарь</h2>
+<p>Когда вы нажимаете «Словарь» у выделенного слова, приложение отправляет это слово (и только его) в Викисловарь (<code>ru.wiktionary.org</code> или <code>en.wiktionary.org</code>, фонд Wikimedia), чтобы показать толкование. Запрос обрабатывается по <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">политике конфиденциальности Wikimedia</a>. Кнопка «Другие словари» передаёт слово выбранному вами приложению на телефоне.</p>
 
 <h2>Покупка MyReader Pro</h2>
 <p>MyReader Pro (синхронизация) покупается один раз. Оплату принимает платёжный сервис. Данные карты вы вводите на его странице, и обрабатывает их он по своим правилам; разработчик их не получает. Адрес почты для чека, который вы укажете в приложении, сервер разработчика передаёт платёжному сервису и не сохраняет.</p>
@@ -37,10 +47,13 @@
 <hr>
 <section id="en" lang="en">
 <h1>Privacy policy</h1>
-<p class="muted">MyReader · updated November 11, 2026</p>
-<p>Your books, reading positions, bookmarks and notes are never sent to the developer of MyReader. They are stored on your device and, if you turn on sync, in your own cloud — Google Drive or Yandex Disk. The app has no ads and no analytics. The developer's server only receives what is needed for a MyReader Pro purchase and stores no name, email or card data.</p>
+<p class="muted">MyReader · updated November 15, 2026</p>
+<p>Your books, reading positions, bookmarks and notes are never sent to the developer of MyReader. They are stored on your device and, if you turn on sync, in your own cloud — Google Drive, Yandex Disk or your WebDAV server. The app has no ads and no analytics. The developer's server only receives what is needed for a MyReader Pro purchase and stores no name, email or card data.</p>
 <p><b>Google Drive.</b> If you sign in with Google, the app accesses only its own hidden folder on your Google Drive (<code>drive.appdata</code> scope) and stores the data above there so it appears on your other devices. Data goes directly between your device and Google. Your Google account email is only shown in the app settings. MyReader's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. You can sign out in the app settings, delete the app's hidden data in Google Drive → Settings → Manage apps → MyReader, and revoke access at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
 <p><b>Yandex Disk.</b> If you sign in with Yandex ID, the app accesses only its own folder on your Yandex Disk (“Apps/MyReader”) and basic Disk information to show the account name. Data goes directly between your device and Yandex; the access key stays on your device. Delete the “Apps/MyReader” folder to remove the data; revoke access in your Yandex ID security settings.</p>
+<p><b>WebDAV.</b> If you connect your own WebDAV server (Nextcloud, NAS etc.), the app stores the data above in a “MyReader” folder on that server. The server address, login and password stay on your device; data goes directly between your device and your server. Passwords of private OPDS catalogs are written to any cloud (Google Drive, Yandex Disk, WebDAV) only in encrypted form.</p>
+<p><b>Backup.</b> A backup is a file you save yourself wherever you choose; it is never sent to the developer. Catalog passwords in it are encrypted.</p>
+<p><b>Dictionary.</b> When you tap “Dictionary” on a selected word, the app sends that word (and nothing else) to Wiktionary (<code>ru.wiktionary.org</code> or <code>en.wiktionary.org</code>, Wikimedia Foundation) to show its definition, under the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia privacy policy</a>. “Other dictionaries” passes the word to an app on your phone that you choose.</p>
 <p><b>MyReader Pro.</b> Payment is handled by a payment provider: you enter card details on its page, and the developer does not receive them. The receipt email you enter in the app is passed to the provider by the developer's server and is not stored. The developer's server (<code>books.web-diesel.com</code>) stores only a purchase record: a random order number, the provider's payment number, the time and the issued license code. The license code is stored on your device and in the app folder in your cloud so Pro turns on on your other devices. Write to us to have your purchase record deleted.</p>
 <p><b>Updates.</b> The version installed from the website checks <code>apk.web-diesel.com</code> for a new version at launch; the request contains no personal data. Store versions are updated by the store. OPDS catalogs are contacted only at addresses you add yourself.</p>
 <p>Contact and deletion requests: <a href="mailto:webdiesel.lab@gmail.com">webdiesel.lab@gmail.com</a></p>
